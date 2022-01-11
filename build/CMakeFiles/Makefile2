@@ -64,10 +64,11 @@ CMAKE_BINARY_DIR = /Users/chendongsheng/github/log_tra/build
 
 # The main recursive "all" target.
 all: CMakeFiles/LogTraslate.dir/all
+all: lib/spdlog/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib/spdlog/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -100,13 +101,29 @@ clean: CMakeFiles/NightlyStart.dir/clean
 clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
+clean: lib/spdlog/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib/spdlog
+
+# Recursive "all" directory target.
+lib/spdlog/all: lib/spdlog/CMakeFiles/spdlog.dir/all
+.PHONY : lib/spdlog/all
+
+# Recursive "preinstall" directory target.
+lib/spdlog/preinstall:
+.PHONY : lib/spdlog/preinstall
+
+# Recursive "clean" directory target.
+lib/spdlog/clean: lib/spdlog/CMakeFiles/spdlog.dir/clean
+.PHONY : lib/spdlog/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/LogTraslate.dir
 
 # All Build rule for target.
-CMakeFiles/LogTraslate.dir/all:
+CMakeFiles/LogTraslate.dir/all: lib/spdlog/CMakeFiles/spdlog.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chendongsheng/github/log_tra/build/CMakeFiles --progress-num=1,2,3 "Built target LogTraslate"
@@ -114,7 +131,7 @@ CMakeFiles/LogTraslate.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LogTraslate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chendongsheng/github/log_tra/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chendongsheng/github/log_tra/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LogTraslate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chendongsheng/github/log_tra/build/CMakeFiles 0
 .PHONY : CMakeFiles/LogTraslate.dir/rule
@@ -855,6 +872,32 @@ Experimental: CMakeFiles/Experimental.dir/rule
 CMakeFiles/Experimental.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/clean
 .PHONY : CMakeFiles/Experimental.dir/clean
+
+#=============================================================================
+# Target rules for target lib/spdlog/CMakeFiles/spdlog.dir
+
+# All Build rule for target.
+lib/spdlog/CMakeFiles/spdlog.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/spdlog/CMakeFiles/spdlog.dir/build.make lib/spdlog/CMakeFiles/spdlog.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/spdlog/CMakeFiles/spdlog.dir/build.make lib/spdlog/CMakeFiles/spdlog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chendongsheng/github/log_tra/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target spdlog"
+.PHONY : lib/spdlog/CMakeFiles/spdlog.dir/all
+
+# Build rule for subdir invocation for target.
+lib/spdlog/CMakeFiles/spdlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chendongsheng/github/log_tra/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/spdlog/CMakeFiles/spdlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chendongsheng/github/log_tra/build/CMakeFiles 0
+.PHONY : lib/spdlog/CMakeFiles/spdlog.dir/rule
+
+# Convenience name for target.
+spdlog: lib/spdlog/CMakeFiles/spdlog.dir/rule
+.PHONY : spdlog
+
+# clean rule for target.
+lib/spdlog/CMakeFiles/spdlog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/spdlog/CMakeFiles/spdlog.dir/build.make lib/spdlog/CMakeFiles/spdlog.dir/clean
+.PHONY : lib/spdlog/CMakeFiles/spdlog.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

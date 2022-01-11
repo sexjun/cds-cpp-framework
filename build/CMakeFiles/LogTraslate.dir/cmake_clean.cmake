@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LogTraslate.dir/main.cpp.o"
   "CMakeFiles/LogTraslate.dir/main.cpp.o.d"
-  "CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o"
-  "CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o.d"
+  "CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o"
+  "CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o.d"
   "LogTraslate"
   "LogTraslate.pdb"
 )

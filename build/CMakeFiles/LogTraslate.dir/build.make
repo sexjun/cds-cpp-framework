@@ -83,31 +83,32 @@ CMakeFiles/LogTraslate.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LogTraslate.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chendongsheng/github/log_tra/main.cpp -o CMakeFiles/LogTraslate.dir/main.cpp.s
 
-CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o: CMakeFiles/LogTraslate.dir/flags.make
-CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o: ../src/OpenFile.cpp
-CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o: CMakeFiles/LogTraslate.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chendongsheng/github/log_tra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o -MF CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o.d -o CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o -c /Users/chendongsheng/github/log_tra/src/OpenFile.cpp
+CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: CMakeFiles/LogTraslate.dir/flags.make
+CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp
+CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: CMakeFiles/LogTraslate.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chendongsheng/github/log_tra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o -MF CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o.d -o CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o -c /Users/chendongsheng/github/log_tra/src/OpenFIle.cpp
 
-CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chendongsheng/github/log_tra/src/OpenFile.cpp > CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.i
+CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chendongsheng/github/log_tra/src/OpenFIle.cpp > CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.i
 
-CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chendongsheng/github/log_tra/src/OpenFile.cpp -o CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.s
+CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chendongsheng/github/log_tra/src/OpenFIle.cpp -o CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.s
 
 # Object files for target LogTraslate
 LogTraslate_OBJECTS = \
 "CMakeFiles/LogTraslate.dir/main.cpp.o" \
-"CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o"
+"CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o"
 
 # External object files for target LogTraslate
 LogTraslate_EXTERNAL_OBJECTS =
 
 LogTraslate: CMakeFiles/LogTraslate.dir/main.cpp.o
-LogTraslate: CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o
+LogTraslate: CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o
 LogTraslate: CMakeFiles/LogTraslate.dir/build.make
+LogTraslate: lib/spdlog/libspdlogd.a
 LogTraslate: CMakeFiles/LogTraslate.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chendongsheng/github/log_tra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LogTraslate"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LogTraslate.dir/link.txt --verbose=$(VERBOSE)

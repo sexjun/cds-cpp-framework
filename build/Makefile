@@ -523,6 +523,19 @@ Experimental/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
+#=============================================================================
+# Target rules for targets named spdlog
+
+# Build rule for target.
+spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog
+.PHONY : spdlog
+
+# fast build rule for target.
+spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f lib/spdlog/CMakeFiles/spdlog.dir/build.make lib/spdlog/CMakeFiles/spdlog.dir/build
+.PHONY : spdlog/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -547,29 +560,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/OpenFile.o: src/OpenFile.cpp.o
-.PHONY : src/OpenFile.o
+src/OpenFIle.o: src/OpenFIle.cpp.o
+.PHONY : src/OpenFIle.o
 
 # target to build an object file
-src/OpenFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o
-.PHONY : src/OpenFile.cpp.o
+src/OpenFIle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o
+.PHONY : src/OpenFIle.cpp.o
 
-src/OpenFile.i: src/OpenFile.cpp.i
-.PHONY : src/OpenFile.i
+src/OpenFIle.i: src/OpenFIle.cpp.i
+.PHONY : src/OpenFIle.i
 
 # target to preprocess a source file
-src/OpenFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.i
-.PHONY : src/OpenFile.cpp.i
+src/OpenFIle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.i
+.PHONY : src/OpenFIle.cpp.i
 
-src/OpenFile.s: src/OpenFile.cpp.s
-.PHONY : src/OpenFile.s
+src/OpenFIle.s: src/OpenFIle.cpp.s
+.PHONY : src/OpenFIle.s
 
 # target to generate assembly for a file
-src/OpenFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.s
-.PHONY : src/OpenFile.cpp.s
+src/OpenFIle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogTraslate.dir/build.make CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.s
+.PHONY : src/OpenFIle.cpp.s
 
 # Help Target
 help:
@@ -611,12 +624,13 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... LogTraslate"
+	@echo "... spdlog"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/OpenFile.o"
-	@echo "... src/OpenFile.i"
-	@echo "... src/OpenFile.s"
+	@echo "... src/OpenFIle.o"
+	@echo "... src/OpenFIle.i"
+	@echo "... src/OpenFIle.s"
 .PHONY : help
 
 

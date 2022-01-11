@@ -32,3 +32,9 @@
 /Users/chendongsheng/github/log_tra/build/CMakeFiles/ExperimentalMemCheck.dir
 /Users/chendongsheng/github/log_tra/build/CMakeFiles/Continuous.dir
 /Users/chendongsheng/github/log_tra/build/CMakeFiles/Experimental.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/edit_cache.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/package.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/rebuild_cache.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/package_source.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/test.dir
+/Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/spdlog.dir

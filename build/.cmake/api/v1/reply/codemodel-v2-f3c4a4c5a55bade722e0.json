@@ -6,6 +6,10 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
@@ -45,12 +49,31 @@
 						27,
 						28
 					]
+				},
+				{
+					"build" : "lib/spdlog",
+					"jsonFile" : "directory-lib.spdlog-Debug-cca069e7a04983dae516.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/spdlog",
+					"targetIndexes" : 
+					[
+						29
+					]
 				}
 			],
 			"name" : "Debug",
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
 						0
@@ -87,6 +110,18 @@
 						26,
 						27,
 						28
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						29
 					]
 				}
 			],
@@ -221,7 +256,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LogTraslate::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LogTraslate-Debug-7ef35b46c1ba2ad2da86.json",
+					"jsonFile" : "target-LogTraslate-Debug-8d136dcb7395ebb2932f.json",
 					"name" : "LogTraslate",
 					"projectIndex" : 0
 				},
@@ -294,6 +329,13 @@
 					"jsonFile" : "target-NightlyUpdate-Debug-604138ba485cd40813a4.json",
 					"name" : "NightlyUpdate",
 					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "spdlog::@83ae2c9e0cfde2973663",
+					"jsonFile" : "target-spdlog-Debug-3e614043cabe7f8962d1.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
 				}
 			]
 		}
