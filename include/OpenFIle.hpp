@@ -8,7 +8,15 @@ public:
     ~OpenFile(){};
     void readFile();
     void writeFile();
-    void closeFile();
+    void setFileName(std::string fileName);
+    std::string getFileName();
+    std::string getFileContent();
+    void setFileContent(std::string fileContent);
+    void setfileSize(int fileSize);
+    int getFileSize();
 private:
-    char* fileInfo;
+    // 文件的内容读取到这里
+    char* fileContent;
+    int fileSize;
+    std::string fileName;
 };

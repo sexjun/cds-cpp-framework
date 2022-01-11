@@ -1,0 +1,3 @@
+[submodule "lib/lib/spdlog"]
+	path = lib/lib/spdlog
+	url = https://github.com/gabime/spdlog.git
