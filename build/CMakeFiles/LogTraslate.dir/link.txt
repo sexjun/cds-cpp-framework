@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/LogTraslate.dir/main.cpp.o CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o -o LogTraslate 

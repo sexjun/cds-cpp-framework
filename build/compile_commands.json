@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/chendongsheng/github/log_tra/build",
+  "command": "/usr/bin/clang++  -I/Users/chendongsheng/github/log_tra/./include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -o CMakeFiles/LogTraslate.dir/main.cpp.o -c /Users/chendongsheng/github/log_tra/main.cpp",
+  "file": "/Users/chendongsheng/github/log_tra/main.cpp"
+},
+{
+  "directory": "/Users/chendongsheng/github/log_tra/build",
+  "command": "/usr/bin/clang++  -I/Users/chendongsheng/github/log_tra/./include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -o CMakeFiles/LogTraslate.dir/src/OpenFile.cpp.o -c /Users/chendongsheng/github/log_tra/src/OpenFile.cpp",
+  "file": "/Users/chendongsheng/github/log_tra/src/OpenFile.cpp"
+}
+]
