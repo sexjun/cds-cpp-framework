@@ -354,6 +354,24 @@ DART_TESTING_TIMEOUT:STRING=1500
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/local/bin/git
 
+//Enable CI build targets.
+JSON_CI:BOOL=OFF
+
+//Use extended diagnostic messages.
+JSON_Diagnostics:BOOL=OFF
+
+//Enable implicit conversions.
+JSON_ImplicitConversions:BOOL=ON
+
+//Install CMake targets during install step.
+JSON_Install:BOOL=OFF
+
+//Use non-amalgamated version of the library.
+JSON_MultipleHeaders:BOOL=OFF
+
+//Include as system headers (skip for clang-tidy).
+JSON_SystemInclude:BOOL=OFF
+
 //Value Computed by CMake
 LogTraslate_BINARY_DIR:STATIC=/Users/chendongsheng/github/log_tra/build
 
@@ -491,6 +509,15 @@ Z_VCPKG_CL:FILEPATH=Z_VCPKG_CL-NOTFOUND
 //The directory which contains the installed libraries for each
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=/Users/chendongsheng/github/vcpkg/installed
+
+//Value Computed by CMake
+nlohmann_json_BINARY_DIR:STATIC=/Users/chendongsheng/github/log_tra/build/lib/json
+
+//Value Computed by CMake
+nlohmann_json_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+nlohmann_json_SOURCE_DIR:STATIC=/Users/chendongsheng/github/log_tra/lib/json
 
 //Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=/Users/chendongsheng/github/log_tra/build/lib/spdlog
@@ -639,7 +666,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -738,12 +765,15 @@ DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
+//Build the unit tests when BUILD_TESTING is enabled.
+JSON_BuildTests:INTERNAL=OFF
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
+NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=lib/cmake/nlohmann_json
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
 //Install the dependencies listed in your manifest:

@@ -11,6 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.21.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.21.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.21.4/CMakeSystem.cmake"
+  "../lib/json/CMakeLists.txt"
+  "../lib/json/cmake/config.cmake.in"
+  "../lib/json/cmake/nlohmann_jsonConfigVersion.cmake.in"
+  "../lib/json/cmake/pkg-config.pc.in"
   "../lib/spdlog/CMakeLists.txt"
   "../lib/spdlog/cmake/ide.cmake"
   "../lib/spdlog/cmake/utils.cmake"
@@ -22,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeLanguageInformation.cmake"
+  "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/CPack.cmake"
@@ -38,6 +43,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/Clang.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Compiler/GNU.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/DartConfiguration.tcl.in"
+  "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/ExternalProject.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindPackageMessage.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/FindThreads.cmake"
@@ -51,6 +57,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/Cellar/cmake/3.21.4/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   "/usr/local/Cellar/cmake/3.21.4/share/cmake/Templates/CPackConfig.cmake.in"
   )
 
@@ -67,6 +74,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/spdlog/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/json/nlohmann_json.pc"
+  "lib/json/nlohmann_jsonConfigVersion.cmake"
+  "lib/json/nlohmann_jsonConfig.cmake"
+  "lib/json/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

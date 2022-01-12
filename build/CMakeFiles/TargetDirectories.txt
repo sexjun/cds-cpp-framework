@@ -38,3 +38,8 @@
 /Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/package_source.dir
 /Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/test.dir
 /Users/chendongsheng/github/log_tra/build/lib/spdlog/CMakeFiles/spdlog.dir
+/Users/chendongsheng/github/log_tra/build/lib/json/CMakeFiles/edit_cache.dir
+/Users/chendongsheng/github/log_tra/build/lib/json/CMakeFiles/rebuild_cache.dir
+/Users/chendongsheng/github/log_tra/build/lib/json/CMakeFiles/package_source.dir
+/Users/chendongsheng/github/log_tra/build/lib/json/CMakeFiles/package.dir
+/Users/chendongsheng/github/log_tra/build/lib/json/CMakeFiles/test.dir

@@ -65,10 +65,12 @@ CMAKE_BINARY_DIR = /Users/chendongsheng/github/log_tra/build
 # The main recursive "all" target.
 all: CMakeFiles/LogTraslate.dir/all
 all: lib/spdlog/all
+all: lib/json/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: lib/spdlog/preinstall
+preinstall: lib/json/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -102,7 +104,23 @@ clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
 clean: lib/spdlog/clean
+clean: lib/json/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib/json
+
+# Recursive "all" directory target.
+lib/json/all:
+.PHONY : lib/json/all
+
+# Recursive "preinstall" directory target.
+lib/json/preinstall:
+.PHONY : lib/json/preinstall
+
+# Recursive "clean" directory target.
+lib/json/clean:
+.PHONY : lib/json/clean
 
 #=============================================================================
 # Directory level rules for directory lib/spdlog

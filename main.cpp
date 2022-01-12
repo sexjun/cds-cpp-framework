@@ -38,6 +38,25 @@ void testlog(){
     spdlog::info("{:>8} aligned, {:<8} aligned", "right", "left");
 }
 
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
+int json_test()
+{
+    // create a JSON value
+    json j = R"({"compact": true, "schema": 0})"_json;
+
+    // serialize it to CBOR
+    std::vector<std::uint8_t> v = json::to_cbor(j);
+
+    // print the vector content
+    for (auto& byte : v)
+    {
+        std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << (int)byte << " ";
+    }
+    std::cout << std::endl;
+    return 1;
+}
+
 int main(int, char**) {
     cout << "workPath:" <<getWorkPath() << endl;
     getOprationSystemType();
@@ -45,4 +64,5 @@ int main(int, char**) {
     OpenFile hashLog("dddd");
     testlog();
 
+    json_test();
 }
