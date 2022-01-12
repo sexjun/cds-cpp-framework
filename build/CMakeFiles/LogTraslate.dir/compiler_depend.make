@@ -234,14 +234,7 @@ CMakeFiles/LogTraslate.dir/main.cpp.o: ../main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
   ../include/OpenFIle.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_posix_vdisable.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_seek_set.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/gethostuuid.h \
+  ../include/libHead.h \
   ../lib/spdlog/include/spdlog/spdlog.h \
   ../lib/spdlog/include/spdlog/common.h \
   ../lib/spdlog/include/spdlog/tweakme.h \
@@ -279,7 +272,15 @@ CMakeFiles/LogTraslate.dir/main.cpp.o: ../main.cpp \
   ../lib/spdlog/include/spdlog/details/console_globals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/array \
   ../lib/spdlog/include/spdlog/cfg/env.h \
-  ../lib/spdlog/include/spdlog/cfg/helpers.h
+  ../lib/spdlog/include/spdlog/cfg/helpers.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/unistd.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_seek_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_select.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/gethostuuid.h
 
 CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iostream \
@@ -517,7 +518,47 @@ CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/deque \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iomanip \
-  ../include/OpenFIle.hpp
+  ../include/OpenFIle.hpp \
+  ../include/libHead.h \
+  ../lib/spdlog/include/spdlog/spdlog.h \
+  ../lib/spdlog/include/spdlog/common.h \
+  ../lib/spdlog/include/spdlog/tweakme.h \
+  ../lib/spdlog/include/spdlog/details/null_mutex.h \
+  ../lib/spdlog/include/spdlog/fmt/fmt.h \
+  ../lib/spdlog/include/spdlog/fmt/bundled/core.h \
+  ../lib/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/math.h \
+  ../lib/spdlog/include/spdlog/details/registry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__hash_table \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
+  ../lib/spdlog/include/spdlog/logger.h \
+  ../lib/spdlog/include/spdlog/details/log_msg.h \
+  ../lib/spdlog/include/spdlog/details/backtracer.h \
+  ../lib/spdlog/include/spdlog/details/log_msg_buffer.h \
+  ../lib/spdlog/include/spdlog/details/circular_q.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
+  ../lib/spdlog/include/spdlog/version.h \
+  ../lib/spdlog/include/spdlog/details/synchronous_factory.h \
+  ../lib/spdlog/include/spdlog/sinks/rotating_file_sink.h \
+  ../lib/spdlog/include/spdlog/sinks/base_sink.h \
+  ../lib/spdlog/include/spdlog/sinks/sink.h \
+  ../lib/spdlog/include/spdlog/formatter.h \
+  ../lib/spdlog/include/spdlog/details/file_helper.h \
+  ../lib/spdlog/include/spdlog/sinks/daily_file_sink.h \
+  ../lib/spdlog/include/spdlog/fmt/chrono.h \
+  ../lib/spdlog/include/spdlog/fmt/bundled/chrono.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/sstream \
+  ../lib/spdlog/include/spdlog/details/os.h \
+  ../lib/spdlog/include/spdlog/sinks/stdout_color_sinks.h \
+  ../lib/spdlog/include/spdlog/sinks/ansicolor_sink.h \
+  ../lib/spdlog/include/spdlog/details/console_globals.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/array \
+  ../lib/spdlog/include/spdlog/cfg/env.h \
+  ../lib/spdlog/include/spdlog/cfg/helpers.h
 
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/deque:
@@ -529,6 +570,12 @@ CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/fstream:
 
 ../src/OpenFIle.cpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h:
 
 ../lib/spdlog/include/spdlog/cfg/helpers.h:
 
@@ -576,11 +623,7 @@ CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp \
 
 ../lib/spdlog/include/spdlog/spdlog.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h:
+../include/libHead.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference:
 
@@ -610,9 +653,9 @@ CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o: ../src/OpenFIle.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_in_port_t.h:
 
-../lib/spdlog/include/spdlog/details/os.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/gethostuuid.h:
+
+../lib/spdlog/include/spdlog/details/os.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_in_addr_t.h:
 

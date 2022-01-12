@@ -1,6 +1,8 @@
 #include <string>
 #include <iostream>
 
+#include "libHead.h"
+
 class OpenFile {
 public:
     OpenFile(std::string fileName);

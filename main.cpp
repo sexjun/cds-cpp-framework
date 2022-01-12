@@ -24,12 +24,7 @@ static void getOprationSystemType(){
     #endif
 }
 
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/rotating_file_sink.h"
-#include "spdlog/sinks/daily_file_sink.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
 
-#include "spdlog/cfg/env.h"
 void testlog(){
     // load_levels_example();
     spdlog::cfg::load_env_levels();

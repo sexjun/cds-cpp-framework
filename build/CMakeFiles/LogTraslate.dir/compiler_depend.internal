@@ -235,14 +235,7 @@ CMakeFiles/LogTraslate.dir/main.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer
  /Users/chendongsheng/github/log_tra/include/OpenFIle.hpp
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/unistd.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_posix_vdisable.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_seek_set.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_select.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/gethostuuid.h
+ /Users/chendongsheng/github/log_tra/include/libHead.h
  /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/spdlog.h
  /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/common.h
  /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/tweakme.h
@@ -281,6 +274,14 @@ CMakeFiles/LogTraslate.dir/main.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/array
  /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/cfg/env.h
  /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/cfg/helpers.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/unistd.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/unistd.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_posix_vdisable.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_seek_set.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/select.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_select.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_uuid_t.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/gethostuuid.h
 
 CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o
  /Users/chendongsheng/github/log_tra/src/OpenFIle.cpp
@@ -520,4 +521,44 @@ CMakeFiles/LogTraslate.dir/src/OpenFIle.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iomanip
  /Users/chendongsheng/github/log_tra/include/OpenFIle.hpp
+ /Users/chendongsheng/github/log_tra/include/libHead.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/spdlog.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/common.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/tweakme.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/null_mutex.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/fmt/fmt.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/fmt/bundled/core.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/fmt/bundled/format.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cmath
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/math.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/math.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/registry.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_map
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__hash_table
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/logger.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/log_msg.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/backtracer.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/log_msg_buffer.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/circular_q.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/version.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/synchronous_factory.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/rotating_file_sink.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/base_sink.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/sink.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/formatter.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/file_helper.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/daily_file_sink.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/fmt/chrono.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/fmt/bundled/chrono.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/sstream
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/os.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/stdout_color_sinks.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/sinks/ansicolor_sink.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/details/console_globals.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/array
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/cfg/env.h
+ /Users/chendongsheng/github/log_tra/lib/spdlog/include/spdlog/cfg/helpers.h
 
