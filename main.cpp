@@ -38,8 +38,7 @@ void testlog(){
     spdlog::info("{:>8} aligned, {:<8} aligned", "right", "left");
 }
 
-#include <nlohmann/json.hpp>
-using json = nlohmann::json;
+
 int json_test()
 {
     // create a JSON value

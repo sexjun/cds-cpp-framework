@@ -4,3 +4,5 @@
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "spdlog/cfg/env.h"
 
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
