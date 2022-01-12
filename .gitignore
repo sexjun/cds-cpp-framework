@@ -34,4 +34,3 @@
 build/**
 !build/lib/*
 !build/Makefile
-build
