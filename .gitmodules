@@ -3,4 +3,4 @@ path = lib/spdlog
 url = https://github.com/gabime/spdlog.git
 [submodule "lib/json"]
 	path = lib/json
-	url = git@github.com:nlohmann/json.git
+	url = https://github.com/nlohmann/json.git
