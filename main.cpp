@@ -36,6 +36,7 @@ void testlog(){
     spdlog::info("Support for floats {:03.2f}", 1.23456);
     spdlog::info("Positional args are {1} {0}..", "too", "supported");
     spdlog::info("{:>8} aligned, {:<8} aligned", "right", "left");
+    spdlog::set_level(static_cast<level::level_enum>(SPDLOG_LEVEL_DEBUG));
 }
 
 
@@ -50,10 +51,10 @@ int json_test(vector<int> &hash_list, vector<string> &string_list)
         error("file not fonud");
     }
     for(int i = 0; i < file_json_obj.size(); i++) {
-        debug("json map size : {}", file_json_obj.size());
         hash_list.push_back(file_json_obj.at(0)["hash_value"]);
         string_list.push_back(file_json_obj.at(0)["string_value"]);
     }
+    debug("json map size : {}", file_json_obj.size());
 
     std::ofstream o("../res/test_3.json");
     o << std::setw(4) << file_json_obj << std::endl;
@@ -63,11 +64,11 @@ int json_test(vector<int> &hash_list, vector<string> &string_list)
 }
 
 int main(int, char**) {
+    testlog();
     cout << "workPath:" <<getWorkPath() << endl;
     getOprationSystemType();
 
-    OpenFile hashLog("dddd");
-    testlog();
+    OpenFile hashLog("../res/test.json");
     vector<int> hash_list;
     vector<string> string_list;
     json_test(hash_list, string_list);
