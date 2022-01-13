@@ -6,3 +6,8 @@
 
 #include <nlohmann/json.hpp>
 using json = nlohmann::json;
+
+void cds_test_01();
+void cds_test_02();
+void cds_test_03();
+void cds_test_04();

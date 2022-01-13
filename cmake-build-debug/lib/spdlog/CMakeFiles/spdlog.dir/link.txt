@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libspdlogd.a CMakeFiles/spdlog.dir/src/spdlog.cpp.o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o CMakeFiles/spdlog.dir/src/async.cpp.o CMakeFiles/spdlog.dir/src/cfg.cpp.o CMakeFiles/spdlog.dir/src/fmt.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libspdlogd.a

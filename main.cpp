@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 // 获取文件路径
 #include "OpenFIle.hpp"
 #ifdef _WIN32
@@ -9,6 +10,7 @@
 #include<unistd.h>
 #endif
 using namespace std;
+using namespace spdlog;
 
 static string getWorkPath(){
     char runPath[1024] = {0};
@@ -28,9 +30,7 @@ static void getOprationSystemType(){
 void testlog(){
     // load_levels_example();
     spdlog::cfg::load_env_levels();
-
     spdlog::info("Welcome to spdlog version {}.{}.{}  !", SPDLOG_VER_MAJOR, SPDLOG_VER_MINOR, SPDLOG_VER_PATCH);
-
     spdlog::warn("Easy padding in numbers like {:08d}", 12);
     spdlog::critical("Support for int: {0:d};  hex: {0:x};  oct: {0:o}; bin: {0:b}", 42);
     spdlog::info("Support for floats {:03.2f}", 1.23456);
@@ -41,18 +41,24 @@ void testlog(){
 
 int json_test()
 {
-    // create a JSON value
-    json j = R"({"compact": true, "schema": 0})"_json;
-
-    // serialize it to CBOR
-    std::vector<std::uint8_t> v = json::to_cbor(j);
-
-    // print the vector content
-    for (auto& byte : v)
-    {
-        std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << (int)byte << " ";
+    // read a JSON file
+    std::ifstream i("../res/test.json");
+    json file_json_obj;
+    if(i.is_open()) {
+        i >> file_json_obj;
+    } else {
+        error("file not fonud");
     }
-    std::cout << std::endl;
+    for(int i = 0; i < file_json_obj.size(); i++) {
+        cout << file_json_obj.size();
+        cout << file_json_obj.at(0)["hash_value"] << endl;
+        cout << file_json_obj.at(0)["string_value"] << endl;
+    }
+
+    std::ofstream o("../res/test_3.json");
+    o << std::setw(4) << file_json_obj << std::endl;
+    o << "end";
+    o.close();
     return 1;
 }
 
@@ -62,6 +68,5 @@ int main(int, char**) {
 
     OpenFile hashLog("dddd");
     testlog();
-
     json_test();
 }
