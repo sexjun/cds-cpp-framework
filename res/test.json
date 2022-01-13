@@ -1,18 +1,26 @@
-{
-    "pi": 3.141,
-    "happy": true,
-    "name": "Niels",
-    "nothing": null,
-    "answer": {
-        "everything": 42
+[
+    {
+        "hash_value": -2511324024070982963,
+        "string_value": "username:%d, user_age:%d, user_sex:%d"
     },
-    "list": [
-        1,
-        0,
-        2
-    ],
-    "object": {
-        "currency": "USD",
-        "value": 42.99
+    {
+        "hash_value": 3520684429935430300,
+        "string_value": "username:%d, ====:%d, user_sex:%d"
+    },
+    {
+        "hash_value": 3520684429935430300,
+        "string_value": "username:%d, ====:%d, user_sex:%d"
+    },
+    {
+        "hash_value": -3760813351494928084,
+        "string_value": "username:%d, 1:%d, user_sex:%d"
+    },
+    {
+        "hash_value": 3643679391816121565,
+        "string_value": "username:%d, =2===:%d, user_sex:%d"
+    },
+    {
+        "hash_value": 3053639370795451325,
+        "string_value": "username:%d, ==3==:%d, user_sex:%d"
     }
-}
+]

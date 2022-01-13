@@ -19,7 +19,11 @@ include_directories(./include)
 aux_source_directory("./src/" code_src)
 message("src code : ${code_src}")
 add_executable(LogTraslate main.cpp ${code_src})
-target_link_libraries(LogTraslate PRIVATE spdlog::spdlog nlohmann_json::nlohmann_json)
+target_link_libraries(LogTraslate 
+                        PRIVATE
+                        spdlog::spdlog
+                        nlohmann_json::nlohmann_json
+                    )
 
 
 
