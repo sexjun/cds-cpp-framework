@@ -39,7 +39,7 @@ void testlog(){
 }
 
 
-int json_test()
+int json_test(vector<int> &hash_list, vector<string> &string_list)
 {
     // read a JSON file
     std::ifstream i("../res/test.json");
@@ -50,9 +50,9 @@ int json_test()
         error("file not fonud");
     }
     for(int i = 0; i < file_json_obj.size(); i++) {
-        cout << file_json_obj.size();
-        cout << file_json_obj.at(0)["hash_value"] << endl;
-        cout << file_json_obj.at(0)["string_value"] << endl;
+        debug("json map size : {}", file_json_obj.size());
+        hash_list.push_back(file_json_obj.at(0)["hash_value"]);
+        string_list.push_back(file_json_obj.at(0)["string_value"]);
     }
 
     std::ofstream o("../res/test_3.json");
@@ -68,5 +68,7 @@ int main(int, char**) {
 
     OpenFile hashLog("dddd");
     testlog();
-    json_test();
+    vector<int> hash_list;
+    vector<string> string_list;
+    json_test(hash_list, string_list);
 }
