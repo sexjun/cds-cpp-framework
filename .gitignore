@@ -34,3 +34,5 @@
 build/**
 !build/lib/*
 !build/Makefile
+cmake-build-debug
+!cmake-build-debug/logTraslate

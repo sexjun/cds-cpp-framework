@@ -2,9 +2,11 @@
 #include <fstream>
 //#include <stdint.h>
 #include <cstdint>
+#include <filesystem>
 #include "OpenFIle.hpp"
 
 using namespace std;
+namespace fs = std::filesystem;
 
 OpenFile::OpenFile(std::string fileName):fileSize(0),fileName(fileName),fileContent(nullptr),
                                          hashLogContent(nullptr),
@@ -15,12 +17,12 @@ OpenFile::OpenFile(std::string fileName):fileSize(0),fileName(fileName),fileCont
     if(!fileContent) {
         spdlog::error("malloc failed");
     }
-    this->readFileInfo();
+
     hashLogContent = (char*) malloc(this->fileSize);
     if(!hashLogContent) {
         spdlog::error("malloc failed");
     }
-    this->readHshLogContent();
+
     this->userLogContent = (char*) malloc(this->USE_LOG_MAX_SIZE);
     if(!this->userLogContent) {
         spdlog::error("malloc failed");
@@ -85,6 +87,7 @@ bool OpenFile::readHshLogContent() {
         // copy left file content
         memcpy(this->hashLogContent + startPos, this->fileContent, startPos - sizeof(uint8_t) * 8);
     } else {
+        memcpy(this->hashLogContent, this->fileContent, this->fileSize - sizeof(uint8_t) * 8);
         spdlog::error("{} file full flag is illegality", this->fileName);
         return false;
     }
@@ -93,6 +96,14 @@ bool OpenFile::readHshLogContent() {
 }
 
 bool OpenFile::parseHashLog2UserLog() {
+    if(this->fileContent == nullptr) {
+        spdlog::error("哈希文件读取失败");
+        return false;
+    }
+
+    this->readFileInfo();
+    this->readHshLogContent();
+
     int logSize = this->fileSize - sizeof(uint8_t) * 8;
     uint8_t isALogHeadFlag = 0; // 0xE5
     uint8_t logLength = 0;
@@ -105,34 +116,40 @@ bool OpenFile::parseHashLog2UserLog() {
     int singleLogMaxLength = 0;
 
     int ignoreLogTimes = 0;
-    while(logSize) {
-        memcpy(&isALogHeadFlag, this->hashLogContent, sizeof(uint8_t));
-        this->hashLogContent++;
-        logSize--;
-        do{
-            if(isALogHeadFlag == this->isAlogHeadFlag) {
-                isALogHeadFlag = 0;
-                memcpy(&logLength, this->hashLogContent++, sizeof(uint8_t));
-                logSize--;
-                if(logLength > singleLogMaxLength) {
-                    spdlog::debug("singleLogMaxLength:{}", singleLogMaxLength);
-                    singleLogMaxLength = logLength;
-                }
-                memcpy(tempLog, this->hashLogContent, logLength);
-                this->hashLogContent += logLength;
-                logSize -= logLength;
-                this->ParseOneHashLogToUserLog(tempLog, logLength);
-                logLength = 0;
-            } else {
-                spdlog::info("isAlogHeadFlag: false");
-                ignoreLogTimes++;
-            }
-            memcpy(&isALogHeadFlag, this->hashLogContent++, sizeof(uint8_t));
-        }while(isALogHeadFlag != this->isAlogHeadFlag);{
+    int maxFaultTimes = 0;
+    while(logSize > 0) {
+        while(isALogHeadFlag != this->isAlogHeadFlag) {
             memcpy(&isALogHeadFlag, this->hashLogContent, sizeof(uint8_t));
             this->hashLogContent++;
+            if (logSize-- <= 0) {
+                spdlog::info("parese hash log to user log done");
+                break;
+            }
+            if(++maxFaultTimes == 100) {
+                break;
+                spdlog::error("isALogHeadFlag error:{} times", maxFaultTimes);
+            }
+        }
+
+        if(isALogHeadFlag == this->isAlogHeadFlag) {
+//                isALogHeadFlag = 0;
+            memcpy(&logLength, this->hashLogContent++, sizeof(uint8_t));
             logSize--;
-        };
+            if(logLength > singleLogMaxLength) {
+                spdlog::debug("singleLogMaxLength:{}", singleLogMaxLength);
+                singleLogMaxLength = logLength;
+            }
+            memcpy(tempLog, this->hashLogContent, logLength);
+            this->hashLogContent += logLength;
+            logSize -= logLength;
+            this->ParseOneHashLogToUserLog(tempLog, logLength);
+            logLength = 0;
+        } else {
+            spdlog::info("isAlogHeadFlag: false");
+            ignoreLogTimes++;
+        }
+        memcpy(&isALogHeadFlag, this->hashLogContent++, sizeof(uint8_t));
+        logSize--;
     }
     spdlog::critical("singleLogMaxLength:{}, ignoreLogTimes:{}", singleLogMaxLength, ignoreLogTimes);
     return true;
@@ -214,7 +231,15 @@ bool OpenFile::logHashValueHandle(uint32_t hashValue, uint8_t parameterNumber, c
 }
 
 void OpenFile::getHashJsonConfigFile(const std::vector<std::string> &str, const std::vector<int> &hash) {
-    this->hashLists = hash;
-    this->stringLists = str;
+    this->hashLists.assign(hash.begin(), hash.end());
+    this->stringLists.assign(str.begin(), str.end());
+    return;
+}
+
+void OpenFile::saveUserLog() {
+    std::filesystem::path p = this->fileName;
+    std::filesystem::path basePath = fs::absolute(p);
+    basePath.append("user_log");
+    spdlog::critical("user log file:{}, hash log file:{}", string(basePath), this->fileName);
     return;
 }

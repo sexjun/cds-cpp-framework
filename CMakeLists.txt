@@ -7,7 +7,7 @@ enable_testing()
 # spdlog的部分配置
 add_subdirectory(lib/spdlog)
 if(NOT CMAKE_CXX_STANDARD)
-    set(CMAKE_CXX_STANDARD 11)
+    set(CMAKE_CXX_STANDARD 17)
     set(CMAKE_CXX_STANDARD_REQUIRED ON)
 endif()
 

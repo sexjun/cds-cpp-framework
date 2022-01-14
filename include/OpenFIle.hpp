@@ -15,17 +15,22 @@ public:
     void setFileContent(std::string fileContent);
     void setFileSize(int fileSize);
     int getFileSize();
+
+    void getHashJsonConfigFile(const std::vector<std::string> &str, const std::vector<int> &hash);
+    bool parseHashLog2UserLog();
+    void saveUserLog();
+
 private:
     bool readFileInfo();
     bool readHshLogContent();
-    bool parseHashLog2UserLog();
+
     bool ParseOneHashLogToUserLog(const char* oneHashLog, const int logSize);
 
     bool logTagHandle(uint8_t logTag);
     bool logLevelHandle(uint8_t logLevel);
     bool logTimeHandle(uint32_t time, uint16_t ms);
     bool logHashValueHandle(uint32_t hashValue, uint8_t parameterNumber, const char* parameterList);
-    void getHashJsonConfigFile(const std::vector<std::string> &str, const std::vector<int> &hash);
+
     // 文件的内容读取到这里
     const int FILE_MAX_SIZE = 1024 * 1024 * 3;
     const int USE_LOG_MAX_SIZE = 1024 * 1024 * 20;

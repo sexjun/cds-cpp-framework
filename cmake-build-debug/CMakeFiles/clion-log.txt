@@ -1,8 +1,0 @@
-"/Users/chendongsheng/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" /Users/chendongsheng/github/log_tra
--- Build spdlog: 1.9.2
--- Build type: Debug
--- Using the single-header code from /Users/chendongsheng/github/log_tra/lib/json/single_include/
-src code : ./src//OpenFIle.cpp;./src//Test.cpp
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/chendongsheng/github/log_tra/cmake-build-debug
